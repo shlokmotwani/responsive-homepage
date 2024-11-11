@@ -29,6 +29,7 @@ body {
   background-color: blueviolet;
   transform: rotate(-25deg);
 }
+
 #about-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -140,10 +141,49 @@ span {
   margin-top: 15px;
 }
 
-@media (500px <= width <= 1000px) {
+@media (500px < width <= 1000px) {
+  
+  #bg-rotated {
+    transform: rotate(-12deg);
+  }
+
   #about-wrapper {
-    background-color: mediumseagreen;
-    display: flex;
+    padding: 35px;
+  }
+
+  #about-wrapper > h1 {
+    margin-top: 20px;
+    margin-left: -70px;
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 100;
+  }
+
+  #about-wrapper picture,
+  #about-wrapper img {
+    width: 50vw;
+  }
+
+  #about-wrapper img {
+    box-shadow: 3px 3px 10px black;
+  }
+
+  #about-wrapper > div:nth-child(3) {
+    box-shadow: 3px 3px 10px black;
+    align-items: center;
+    width: 90%;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  #button-div{
+    display: none;
+  }
+
+  #contact-image picture,
+  #contact-image img {
+    width: 40vw;
+    margin: 15px 15px 20px 10px;
   }
 }
 
