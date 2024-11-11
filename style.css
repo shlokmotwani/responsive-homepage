@@ -7,22 +7,87 @@ html,
 body {
   width: 100%;
   height: 100%;
+  min-width: 240px;
+  overflow-x: hidden;
 }
 
 #main {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  overflow: hidden;
 }
 
+#bg-rotated-outer{
+  position: relative;
+}
+
+#bg-rotated {
+  position: absolute;
+  z-index: -1;
+  width: 200vw;
+  height: 30vh;
+  transform-origin: left bottom;
+  background-color: blueviolet;
+  transform: rotate(-25deg);
+}
 #about-wrapper {
-  background-color: aqua;
   height: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about-wrapper picture {
+  width: 25%;
 }
 
 #portfolio-wrapper {
   background-color: green;
-  height: 40%;
+}
+
+#portfolio-card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 10px black;
+}
+
+.card-top {
+  height: 55%;
+  padding: 25px;
+  background-color: orange;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.card-bottom {
+  height: 45%;
+  background-color: white;
+}
+
+.card-bottom-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  margin-top: 5px;
+}
+
+.card-bottom-top > div > i {
+  margin: 0 3px;
+}
+
+.card-bottom-bottom {
+  margin: 10px 15px;
 }
 
 #contact-wrapper {
@@ -30,16 +95,57 @@ body {
   height: 30%;
 }
 
-@media (max-width: 1000px) {
-    #about-wrapper {
-      background-color: mediumseagreen;
-      height: 30%;
-    }
+#contact-wrapper img {
+  width: 25%;
+}
+
+@media (500px <= width <= 1000px) {
+  #about-wrapper {
+    background-color: mediumseagreen;
+    height: 30%;
+    display: flex;
+  }
+}
+
+@media (150px <= width <= 500px) {
+  #about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
 
-@media (max-width: 500px) {
-  #about-wrapper {
-    background-color: black;
-    height: 30%;
+  #about-wrapper > h1 {
+    margin-top: -40px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    font-size: 1.8rem;
+  }
+
+  #about-wrapper picture,
+  #about-wrapper img {
+    width: 80vw;
+  }
+
+  #about-wrapper img {
+    box-shadow: 3px 3px 10px black;
+  }
+
+  #about-wrapper > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  #about-wrapper > div:nth-child(3) > * {
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+
+  #contact-wrapper {
+    height: 200px;
   }
 }

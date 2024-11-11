@@ -1,16 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Homepage</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
     <div id="main">
-        <div id="about-wrapper"></div>
-        <div id="portfolio-wrapper"></div>
-        <div id="contact-wrapper"></div>
+      <div id="bg-rotated-outer">
+        <div id="bg-rotated"></div>
     </div>
-</body>
+      <div id="about-wrapper">
+        <picture>
+          <source
+            srcset="./assets/image-mobile.jpg"
+            media="(max-width: 500px)"
+          />
+          <source
+            srcset="./assets/image-tablet.jpg"
+            media="(max-width: 1000px)"
+          />
+          <img
+            src="./assets/image-desktop.jpg"
+            alt="woman working on a computer"
+          />
+        </picture>
+        <h1>Ashley Williams</h1>
+        <div>
+          <h2>About me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            quam quo suscipit officiis facilis laudantium error consequuntur
+            voluptatibus totam cumque quaerat nihil, eaque ipsa asperiores
+            perspiciatis nostrum ut enim necessitatibus!
+          </p>
+          <div>
+            <i class="devicon-github-original colored"></i>
+            <i class="devicon-linkedin-plain colored"></i>
+            <i class="devicon-twitter-original colored"></i>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio-wrapper">
+        <h2>My work</h2>
+        <div id="portfolio-card-container">
+          <div class="card">
+            <div class="card-top">
+              <p>screenshot of project</p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-top">
+                <h4>Project name</h4>
+                <div>
+                  <i class="devicon-github-original colored"></i>
+                  <i class="devicon-linkedin-plain colored"></i>
+                </div>
+              </div>
+              <div class="card-bottom-bottom">
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <p>screenshot of project</p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-top">
+                <h4>Project name</h4>
+                <div>
+                  <i class="devicon-github-original colored"></i>
+                  <i class="devicon-linkedin-plain colored"></i>
+                </div>
+              </div>
+              <div class="card-bottom-bottom">
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <p>screenshot of project</p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-top">
+                <h4>Project name</h4>
+                <div>
+                  <i class="devicon-github-original colored"></i>
+                  <i class="devicon-linkedin-plain colored"></i>
+                </div>
+              </div>
+              <div class="card-bottom-bottom">
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <p>screenshot of project</p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-top">
+                <h4>Project name</h4>
+                <div>
+                  <i class="devicon-github-original colored"></i>
+                  <i class="devicon-linkedin-plain colored"></i>
+                </div>
+              </div>
+              <div class="card-bottom-bottom">
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <p>screenshot of project</p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-top">
+                <h4>Project name</h4>
+                <div>
+                  <i class="devicon-github-original colored"></i>
+                  <i class="devicon-linkedin-plain colored"></i>
+                </div>
+              </div>
+              <div class="card-bottom-bottom">
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <p>screenshot of project</p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-top">
+                <h4>Project name</h4>
+                <div>
+                  <i class="devicon-github-original colored"></i>
+                  <i class="devicon-linkedin-plain colored"></i>
+                </div>
+              </div>
+              <div class="card-bottom-bottom">
+                <p>
+                  Short description of the project. Just a couple sentences will
+                  do.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact-wrapper">
+        <div id="contact-details"></div>
+        <div id="contact-image">
+          <picture>
+            <source
+              srcset="./assets/contact-image-mobile.jpg"
+              media="(max-width: 500px)"
+            />
+            <source
+              srcset="./assets/contact-image-tablet.jpg"
+              media="(max-width: 1000px)"
+            />
+            <img
+              src="./assets/contact-image-desktop.jpg"
+              alt="woman working on a computer"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
