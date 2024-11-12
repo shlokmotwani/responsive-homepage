@@ -32,11 +32,17 @@ body {
 
 #about-wrapper {
   display: flex;
-  flex-wrap: wrap;
 }
 
-#about-wrapper picture {
-  width: 25%;
+
+#about-wrapper picture,
+#about-wrapper img {
+  width: 40vw;
+}
+
+#about-wrapper>div{
+  box-shadow: 3px 3px 10px black;
+  background-color: white;
 }
 
 #portfolio-wrapper {
@@ -56,27 +62,27 @@ span {
   flex-wrap: wrap;
 }
 
-#portfolio-card-container>div:nth-child(1)>div:nth-child(1) {
+#portfolio-card-container > div:nth-child(1) > div:nth-child(1) {
   background-color: darkmagenta;
 }
 
-#portfolio-card-container>div:nth-child(2)>div:nth-child(1) {
+#portfolio-card-container > div:nth-child(2) > div:nth-child(1) {
   background-color: orange;
 }
 
-#portfolio-card-container>div:nth-child(3)>div:nth-child(1) {
+#portfolio-card-container > div:nth-child(3) > div:nth-child(1) {
   background-color: darkkhaki;
 }
 
-#portfolio-card-container>div:nth-child(4)>div:nth-child(1) {
+#portfolio-card-container > div:nth-child(4) > div:nth-child(1) {
   background-color: darkgreen;
 }
 
-#portfolio-card-container>div:nth-child(5)>div:nth-child(1) {
+#portfolio-card-container > div:nth-child(5) > div:nth-child(1) {
   background-color: darkmagenta;
 }
 
-#portfolio-card-container>div:nth-child(6)>div:nth-child(1) {
+#portfolio-card-container > div:nth-child(6) > div:nth-child(1) {
   background-color: orangered;
 }
 
@@ -121,33 +127,62 @@ span {
 
 #contact-wrapper {
   display: flex;
+  justify-content: space-evenly;
   background-color: blueviolet;
   color: white;
 }
 
-#contact-wrapper div{
+#contact-wrapper div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#contact-wrapper div>p{
+#contact-wrapper div > p {
   align-self: flex-start;
   margin: 15px 0 0 15px;
 }
 
 #contact-wrapper img {
-  width: 100vw;
-  margin-top: 15px;
+  width: 40vw;
+  margin: 15px 0 0 180px;
+}
+
+@media (width > 1000px) {
+  #bg-rotated {
+    width: 200vw;
+    height: 100vh;
+    transform: rotate(-10deg) translateY(-400px);
+  }
+
+  #about-wrapper {
+    justify-content: center;
+    padding: 50px;
+  }
+
+  #about-wrapper h1{
+    align-self: flex-end;
+    transform: translateX(-30vw);
+    color: white;
+    width: 100%;
+  }
+
+  #about-wrapper>div {
+    margin-left: -25vw;
+  }
+
+  #contact-wrapper img {
+    max-width: 600px;
+  }
 }
 
 @media (500px < width <= 1000px) {
-  
   #bg-rotated {
     transform: rotate(-12deg);
   }
 
   #about-wrapper {
+    flex-wrap: wrap;
     padding: 35px;
   }
 
@@ -176,7 +211,7 @@ span {
     margin-top: 20px;
   }
 
-  #button-div{
+  #button-div {
     display: none;
   }
 
